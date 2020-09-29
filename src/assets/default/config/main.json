@@ -1,0 +1,22 @@
+{
+  "core": {
+    "apiBase": {
+      "core": "/api",
+      "api-web": "/api-web"
+    },
+    "languages": [
+      {
+        "iso": "de",
+        "label": "Deutsch"
+      },
+      {
+        "iso": "en",
+        "label": "English",
+        "fallback": true
+      }
+    ],
+    "logging": {
+      "level": "debug"
+    }
+  }
+}

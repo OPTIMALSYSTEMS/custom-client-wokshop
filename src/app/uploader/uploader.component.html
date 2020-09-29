@@ -1,0 +1,13 @@
+<div (yuvFileDrop)="onFileDropped($event)">
+    Drop a DOC!
+
+    <div class="form dark" *ngIf="file" [yuvBusyOverlay]="busy">
+        
+        <yuv-form-input [label]="'choose a title'">
+            <yuv-string [(ngModel)]="title"></yuv-string>
+        </yuv-form-input>
+        <button class="primary" [disabled]="!(file && title)" (click)="create()">Create</button>
+    </div>
+
+
+</div>

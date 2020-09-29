@@ -1,0 +1,28 @@
+:host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    padding: var(--app-pane-padding);
+    padding-top: 32px;
+    gap: var(--app-pane-padding);
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "search" "main";
+    background-color: var(--main-background);
+}
+> * {
+    background-color: var(--panel-background);
+}
+
+.top {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+
+    yuv-quick-search {
+        flex:1
+    }
+}
